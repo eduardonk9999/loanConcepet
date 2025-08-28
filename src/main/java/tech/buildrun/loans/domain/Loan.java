@@ -13,7 +13,11 @@ public class Loan {
             return true;
         }
 
-        // minuto 12.04
+        return customer.isIncomeBetwenn(3000.00, 5000.00)
+                && customer.isAgeLowerThan(30)
+                && customer.isFromLocation("SP");
     }
+
+    // taxa de juros, parei no minuto 15:32
 
 }

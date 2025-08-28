@@ -17,6 +17,20 @@ public class Customer {
 
     public boolean isIncomeEqualOrLowerThan(double value) {
         return income <= value;
-
     }
+
+    public boolean isIncomeBetwenn(double minValue, double maxValue) {
+        return income >= minValue && income <= maxValue;
+    }
+
+    public boolean isAgeLowerThan(int value) {
+        return age < value;
+    }
+
+    public boolean isFromLocation(String location) {
+        return this.location.equalsIgnoreCase(location);
+    }
+
+
+
 }
